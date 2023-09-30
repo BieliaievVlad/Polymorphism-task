@@ -18,10 +18,10 @@ public class Controller {
     public static String getResult() {
         System.out.print("Which device do you want to use: A or B: ");
         String choice = scan.nextLine();
-        if (choice.equals("A")) {
+        if (choice.equalsIgnoreCase("A")) {
             Device_A deviceA = new Device_A();
             return String.valueOf(deviceA.calcResult());
-        } else if (choice.equals("B")) {
+        } else if (choice.equalsIgnoreCase("B")) {
             Device_B deviceB = new Device_B();
             return String.valueOf(deviceB.calcResult());
         } else {

@@ -19,4 +19,8 @@ public class Device {
     public void setParam2(int param2) {
         this.param2 = param2;
     }
+    public String calcResult() {
+        return String.valueOf(param1 + param2);
+    }
+
 }

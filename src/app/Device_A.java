@@ -1,8 +1,9 @@
 package app;
 
 public class Device_A extends Device {
-
-    public int calcResult() {
-        return getParam1() * getParam2();
+    @Override
+    public String calcResult() {
+        int i = getParam1() * getParam2();
+        return String.valueOf(i);
     }
 }
